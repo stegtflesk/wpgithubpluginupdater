@@ -143,7 +143,7 @@ class GithubPluginUpdateController
             }
         }
 
-// Gets the tested version of WP if available
+        // Gets the tested version of WP if available
         $matches = null;
         preg_match( "/tested:\s([\d\.]+)/i", $this->githubAPIResult->body, $matches );
         if ( ! empty( $matches ) ) {
@@ -153,6 +153,8 @@ class GithubPluginUpdateController
                 }
             }
         }
+
+        $response->name = $this->pluginData["Name"];
 
         return $response;
     }

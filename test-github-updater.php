@@ -3,7 +3,7 @@
  * Plugin Name:       Test github updater
  * Plugin URI:        https://example.com/plugins/the-basics/
  * Description:       Prove of concept. Testing how to implement github release controlled updates.
- * Version:           0.0.1
+ * Version:           0.0.2
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Jesper Ager
@@ -18,4 +18,4 @@ use GithubUpdater\Controller\GithubPluginUpdateController;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$updateController = new GithubPluginUpdateController(__FILE__);
+$updateController = new GithubPluginUpdateController(__FILE__, 'stegtflesk', 'wpgithubpluginupdater');
