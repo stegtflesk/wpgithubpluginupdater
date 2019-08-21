@@ -1,0 +1,11 @@
+{
+    "name": "vagrant/test-github-updater",
+    "autoload": {
+        "psr-4": {
+            "GithubUpdater\\": "src"
+        }
+    },
+    "require": {
+        "erusev/parsedown": "^1.7"
+    }
+}
